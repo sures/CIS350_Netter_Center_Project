@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, CIS350PROJECTActivity!</string>
+    <string name="app_name">CIS350PROJECT</string>
+    <string name="EnterUserName">Please Enter Your Username</string>
+    <string name="EnterPassword">Please Enter Your Password</string>
+    <color name="blue">#0000ff</color>
+    <string name="Login">Login</string>
+    <string name="TakeAttendance">Take Attendance</string>
+    <string name="ViewRoster">View Roster</string>
+    <string name="AddActivity">Add Activity</string>
+
+</resources>
