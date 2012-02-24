@@ -2,64 +2,48 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" 
-    android:background="#0d0d0f"
-    >
-   
+    android:background="#c3c3c3"
+    android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/EnterPassword" 
-        android:textColor="#FFFFFF"
-        />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="167dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:background="#FFFFFF"
-        android:inputType="textPersonName" />
+      <EditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+        
+     <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
     
-     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText2"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_marginBottom="18dp"
-        android:text="@string/EnterUserName" 
-        android:textColor="#FFFFFF"
-        />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="167dp"
-        android:layout_height="40dp"
-        android:layout_above="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70dp"
-        android:background="#FFFFFF"
-        android:inputType="textPassword" >
-
-        <requestFocus />
-    </EditText>
-
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="64dp"
-        android:text="@string/Login"
-        android:onClick="onLoginClick"
-         />
+        android:onClick="onAttendanceClick"
+        android:text="@string/TakeAttendance" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:onClick="onRosterClick"
+        android:text="@string/ViewRoster" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button01"
+        android:layout_centerVertical="true"
+        android:onClick="onActivityClick"
+        android:text="@string/AddActivity" />
 
 </RelativeLayout>
