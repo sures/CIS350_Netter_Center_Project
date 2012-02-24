@@ -46,8 +46,8 @@ public class Roster extends ListActivity{
 		setResult(RESULT_OK, i);
 		finish();	
 	}
-	public void onSubmitButtonClick(View view) {
-		Toast.makeText(getApplicationContext(), "Attendance Submitted",
+	public void onEditButtonClick(View view) {
+		Toast.makeText(getApplicationContext(), "Click a name to Edit",
                 Toast.LENGTH_SHORT).show();
 	}
 	
