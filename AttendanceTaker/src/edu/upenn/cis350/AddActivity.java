@@ -13,12 +13,11 @@ public class AddActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity);
     }
-	
+
 	public void onBackButtonClick(View view) {
 		Intent i = new Intent();
 		setResult(RESULT_OK, i);
 		finish();	
 	}
-	
-}
 
+}
